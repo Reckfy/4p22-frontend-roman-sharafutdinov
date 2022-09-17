@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Тесты инженерной версии процессора Эльбрус-16С</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="logo.png" width="150" height="65"></a>
+        </div>
+        <div>
+            <h1>CPU/GPU - блог о компьютерном железе</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Тесты инженерной версии процессора Эльбрус-16С</h2>
+        <p>Появилась возможность протестировать инженерный процессор Эльбрус-16С и сравнить его с предыдущим процессором Эльбрус-8СВ.</p>
+        <p>Эльбрус-16С на архитектуре e2k-v6 является развитием процессора Эльбрус-8СВ (e2k-v5)</p>
+        <p>Его основные характеристики:</p>
+        <ul>
+            <li>16 ядер</li>
+            <li>Частота ядра 2 ГГц</li>
+            <li>Поддержка аппаратной виртуализации</li>
+            <li>Поддержка до 4 ТБ оперативной памяти DDR4-3200</li>
+            <li>32 линии PCIe 3.0</li>
+        </ul>
+        <p>Таблица сравнения с другими процессорами:</p>
+        <table border="1" width="700" color="black">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <strong>Эльбрус-16СВ</strong>
+                    </td>
+                    <td>
+                        <strong>Эльбрус-8СВ</strong>
+                    </td>
+                    <td>
+                        <strong>Core i7-2600</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Семейство ISA
+                    </td>
+                    <td>
+                        VLIW
+                    </td>
+                    <td>
+                        VLIW
+                    </td>
+                    <td>
+                        CISC
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Архитектура
+                    </td>
+                    <td>
+                        e2k
+                    </td>
+                    <td>
+                        e2k
+                    </td>
+                    <td>
+                        x86-64
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Микроархитектура
+                    </td>
+                    <td>
+                        elbrus-v6
+                    </td>
+                    <td>
+                        elbrus-v5
+                    </td>
+                    <td>
+                        Sandy Bridge
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Частота (МГц)
+                    </td>
+                    <td>
+                        2000
+                    </td>
+                    <td>
+                        1500
+                    </td>
+                    <td>
+                        3400
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ядра; Потоки
+                    </td>
+                    <td>
+                        16
+                    </td>
+                    <td>
+                        8
+                    </td>
+                    <td>
+                        4; 8
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Техпроцесс (нм)
+                    </td>
+                    <td>
+                        16
+                    </td>
+                    <td>
+                        28
+                    </td>
+                    <td>
+                        32
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        TDP (Вт)
+                    </td>
+                    <td>
+                        130
+                    </td>
+                    <td>
+                        80-90
+                    </td>
+                    <td>
+                        95
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Тип ОЗУ
+                    </td>
+                    <td>
+                        DDR4-3200 (2400)
+                    </td>
+                    <td>
+                        DDR4-2400
+                    </td>
+                    <td>
+                        DDR3-1333
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Год
+                    </td>
+                    <td>
+                        2021
+                    </td>
+                    <td>
+                        2018
+                    </td>
+                    <td>
+                        2011
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Выводы</h3>
+        <p>Эльбрус-16С на 33% быстрее Эльбрус-8СВ на 1 поток и имеет в 2 раза больше ядер. Есть задачи, где он очень эффективен, где-то не очень. Оба российских процессора уступают Core i7-2600</p>
+        <p>По мощности они будут располагаться так:</p>
+        <ol>
+            <li>Core i7-2600</li>
+            <li>Эльбрус-16СВ</li>
+            <li>Эльбрус-8СВ</li>
+        </ol>
+    </main>
+    <address>
+        <h2>Контакты</h2>
+        <div>
+            <a href="mailto:reckfy777@yandex.ru">E-mail</a>
+        </div>
+        <div>
+            <a href="tel:+78005553535">Телефон</a>
+        </div>
+    </address>
+    <footer>
+        <p>&copy;Copyright</p>
+        <a href="https://vk.com/" rel="nofollow noopener noreferrer"><img src="vk.png" height="40" width="40"></a>
+        <a href="https://www.youtube.com/" rel="nofollow noopener noreferrer"><img src="yt.png" height="40" width="40"></a>
+        <a href="https://www.google.ru/" rel="nofollow noopener noreferrer"><img src="google.png" height="40" width="40"></a>
+    </footer>
+</body>
+</html>
