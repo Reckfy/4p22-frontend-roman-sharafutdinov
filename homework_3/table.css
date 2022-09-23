@@ -1,0 +1,71 @@
+body{
+    font-family: sans-serif;
+    font-weight: 700;
+    box-shadow: 1px 1px 3px 1px black;
+    display: inline-block;
+    padding: 10px;
+}
+.notmetall{
+    background-color: rgb(125, 255, 125);
+    border-radius: 8px;
+    padding: 4px;
+}
+.chelmetall{
+    background-color: rgb(252, 97, 97);
+    border-radius: 8px;
+    padding: 4px;
+}
+.chelzelmetall{
+    background-color: rgb(255, 218, 149);
+    border-radius: 8px;
+    padding: 4px;
+}
+.lantanoid{
+    background-color: rgb(255, 185, 228);
+    border-radius: 8px;
+    padding: 4px;
+}
+.actinoid{
+    background-color: rgb(171, 153, 250);
+    border-radius: 8px;
+    padding: 4px;
+}
+.blaggaz{
+    background-color: rgb(111, 202, 255);
+    border-radius: 8px;
+    padding: 4px;  
+}
+.galogen{
+    background-color: rgb(255, 252, 81);
+    border-radius: 8px;
+    padding: 4px;  
+}
+.polumetall{
+    background-color: rgb(153, 152, 140);
+    border-radius: 8px;
+    padding: 4px;  
+}
+.postpermetall{
+    background-color: rgb(194, 194, 194);
+    border-radius: 8px;
+    padding: 4px;  
+}
+.permetall{
+    background-color: rgb(228, 199, 252);
+    border-radius: 8px;
+    padding: 4px;  
+}
+table{
+    border-spacing: 6px;
+}
+.lanact{
+   text-align: right;
+}
+caption{
+    padding: 20px;
+    font-weight: 800;
+    font-size: 25px;
+}
+.numbertop{
+    text-align: center;
+}
