@@ -26,9 +26,11 @@
     display: flex;
 }
 .main-links{
+    max-width: 266px;
+    min-width: 140px;
     width: 18.5vw;
     padding: 15px 1vw 0 0;
-    margin: 136px 0 0 25px;
+    margin: 136px 0 0 7px;
     position: fixed;
     font-family: sans-serif;
     font-weight: 400;
@@ -70,7 +72,7 @@
     font-family: sans-serif;
     font-weight: 400;
     font-size: 28px;
-    width: 73vw;
+    width: 72vw;
     padding: 4px 0 4px 13px;
 }
 .main-list__whiteblockforscroll{
@@ -78,6 +80,16 @@
     position: fixed;
     z-index: 1500;
     background-color: white;
-    width: 73vw;
+    width: 72vw;
     height: 54px;
+}
+.main-links__new{
+    left: -2px;
+    top: -5px;
+    position: absolute;
+    padding: 5px;
+    background-color: #7b3dff;
+    color: white;
+    border-radius: 30px;
+    font-size: 10px;
 }

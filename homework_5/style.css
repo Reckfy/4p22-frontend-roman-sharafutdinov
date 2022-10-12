@@ -80,3 +80,13 @@
     width: 1080px;
     height: 54px;
 }
+.main-links__new{
+    left: 210px;
+    top: 8px;
+    position: absolute;
+    padding: 5px;
+    background-color: #7b3dff;
+    color: white;
+    border-radius: 30px;
+    font-size: 10px;
+}
