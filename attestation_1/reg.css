@@ -93,7 +93,8 @@ body{
     font-size: calc(28 / 1440 * 100vw);
     font-weight: 700;
     color: #787878;
-    padding-left: calc(15 / 1440 * 100vw);
+    padding: calc(6 / 1440 * 100vw) 0 0 calc(13 / 1440 * 100vw);
+    font-size: calc(27 / 1440 * 100vw);
 }
 
 .main-container input:focus-visible{
@@ -121,7 +122,8 @@ body{
     font-size: calc(28 / 1440 * 100vw);
     font-weight: 700;
     color: #787878;
-    padding-left: calc(15 / 1440 * 100vw);
+    padding: calc(6 / 1440 * 100vw) 0 0 calc(13 / 1440 * 100vw);
+    font-size: calc(27 / 1440 * 100vw);
 }
 
 .main-container__confirm_pass{
@@ -145,12 +147,13 @@ body{
     font-size: calc(28 / 1440 * 100vw);
     font-weight: 700;
     color: #787878;
-    padding-left: calc(15 / 1440 * 100vw);
+    padding: calc(6 / 1440 * 100vw) 0 0 calc(13 / 1440 * 100vw);
+    font-size: calc(27 / 1440 * 100vw);
 }
 
 .main-container__gender{
     display: flexbox;
-    margin-left: calc(24 / 1440 * 100vw);
+    margin-left: calc(25 / 1440 * 100vw);
 }
 
 .main-container__legend{
@@ -162,52 +165,36 @@ body{
     display: flex;
     align-items: center;
     height: calc(19 / 1440 * 100vw);
-    margin-top: calc(10 / 1440 * 100vw);
+    margin-top: calc(11 / 1440 * 100vw);
+    margin-left: calc(2 / 1440 * 100vw);
     position: relative;
 }
 
-.main-container__input_gender{
-    opacity: 0;
-    position: absolute;
-    width: calc(100 / 1440 * 100vw);
-    height: 100%;
-}
-
 .main-container__label_gender{
-    padding-left: calc(30 / 1440 * 100vw);
+    padding: calc(1 / 1440 * 100vw) 0 0 calc(11 / 1440 * 100vw);
     align-items: center;
     font-family: Roboto;
     font-size: calc(14 / 1440 * 100vw);
 }
 
-
-.main-container__label_gender::after{
-    content: '';
-    position: absolute;
-    width: calc(12 / 1440 * 100vw);
-    height: calc(12 / 1440 * 100vw);
-    left: calc(4 / 1440 * 100vw);
-    top: calc(4 / 1440 * 100vw);
-    background-color: #787878;
+.main-container__radio_gender  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     border-radius: 50%;
-    opacity: 0;
-    transition: .5 opacity;
-}
-
-.main-container__input_gender:checked + label::after{
-    opacity: 1;
-}
-
-.main-container__label_gender::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: calc(16 / 1440 * 100vw);
-    height: calc(16 / 1440 * 100vw);
+    width: calc(19 / 1440 * 100vw);
+    height: calc(19 / 1440 * 100vw);
     border: 2px solid #787878;
-    border-radius: calc(50 / 1440 * 100vw);
-}
+    transition: 0.2s all linear;
+    outline: none;
+    position: relative;
+  }
+  
+.main-container__radio_gender  input:checked {
+    box-shadow: inset 0px 0px 0px calc(2 / 1440 * 100vw) #ffffff;
+    background-color: #787878;
+  }
+
 
 .main-container__resume{
     margin: calc(10 / 1440 * 100vw) calc(25 / 1440 * 100vw);
@@ -233,48 +220,31 @@ body{
 
 .main-container__agree{
     display: flex;
-    margin: calc(21 / 1440 * 100vw) 0 0 calc(23 / 1440 * 100vw);
+    margin: calc(20 / 1440 * 100vw) 0 0 calc(23 / 1440 * 100vw);
     position: relative;
 }
 
-.main-container__checkbox_agree{
-    position: absolute;
-    width: calc(24 / 1440 * 100vw);;
+.main-container__agree input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: calc(24 / 1440 * 100vw);
     height: calc(24 / 1440 * 100vw);
-    opacity: 0;
-}
-
-.main-container__agree_text::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: calc(20 / 1440 * 100vw);
-    height: calc(20 / 1440 * 100vw);
     border: 2px solid #787878;
-}
-
-.main-container__agree_text::after{
-    content: '';
-    background: #787878;
-    width: calc(12 / 1440 * 100vw);
-    height: calc(12 / 1440 * 100vw);
-    background-size: 100% 100%;
-    position: absolute;
-    left: calc(6 / 1440 * 100vw);
-    top: calc(6 / 1440 * 100vw);
-    opacity: 0;
-    transition: .3 opacity;
-}
-
-.main-container__checkbox_agree:checked + .main-container__agree_text::after{
-    opacity: 1;
-}
+    transition: 0.2s all linear;
+    outline: none;
+    position: relative;
+  }
+  
+.main-container__agree input:checked {
+    box-shadow: inset 0px 0px 0px calc(4 / 1440 * 100vw) #ffffff;
+    background-color: #787878;
+  }
 
 .main-container__agree_text{
     margin-top: calc(5 / 1440 * 100vw);
     padding: 0;
-    padding-left: calc(34 / 1440 * 100vw);
+    padding-left: calc(11 / 1440 * 100vw);
     font-size: calc(14 / 1440 * 100vw);
     font-family: Roboto;
 }
@@ -285,7 +255,7 @@ body{
     width: calc(180 / 1440 * 100vw);
     height: calc(52 / 1440 * 100vw);
     text-align: center;
-    margin: calc(58 / 1440 * 100vw) auto calc(4 / 1440 * 100vw);
+    margin: calc(56 / 1440 * 100vw) auto calc(4 / 1440 * 100vw);
 }
 
 .main-container__button:hover{
@@ -360,7 +330,7 @@ body{
     .main-container__input_email{
         width: calc(510 / 768 * 100vw);
         height: calc(49 / 768 * 100vw);
-        font-size: calc(28 / 768 * 100vw);
+        font-size: calc(27 / 768 * 100vw);
         padding-left: calc(15 / 768 * 100vw);
     }
 
@@ -376,7 +346,7 @@ body{
     .main-container__input_pass{
         width: calc(510 / 768 * 100vw);
         height: calc(49 / 768 * 100vw);
-        font-size: calc(28 / 768 * 100vw);
+        font-size: calc(27 / 768 * 100vw);
         padding-left: calc(15 / 768 * 100vw);
     }
 
@@ -399,7 +369,7 @@ body{
     .main-container__button{
         width: calc(180 / 768 * 100vw);
         height: calc(52 / 768 * 100vw);
-        margin: calc(58 / 768 * 100vw) auto calc(17 / 768 * 100vw);
+        margin: calc(56 / 768 * 100vw) auto calc(17 / 768 * 100vw);
     }
     
     .main-container__gender{
@@ -419,30 +389,23 @@ body{
     .main-container__radio_gender{
         height: calc(19 / 768 * 100vw);
         margin-top: calc(10 / 768 * 100vw);
+        margin-left: calc(0 / 768 * 100vw);
         position: relative;
     }
-    
-    .main-container__input_gender{
-        width: calc(100 / 768 * 100vw);
+
+    .main-container__radio_gender  input {
+        width: calc(20 / 768 * 100vw);
+        height: calc(20 / 768 * 100vw);
+        border: 2px solid #787878;
     }
-    
+      
+    .main-container__radio_gender  input:checked {
+        box-shadow: inset 0px 0px 0px calc(2 / 768 * 100vw) #ffffff;
+    }
+
     .main-container__label_gender{
-        padding-left: calc(30 / 768 * 100vw);
+        padding: calc(1 / 768 * 100vw) 0 0 calc(10 / 768 * 100vw);
         font-size: calc(14 / 768 * 100vw);
-    }
-    
-    
-    .main-container__label_gender::after{
-        width: calc(12 / 768 * 100vw);
-        height: calc(12 / 768 * 100vw);
-        left: calc(4 / 768 * 100vw);
-        top: calc(4 / 768 * 100vw);
-    }
-    
-    .main-container__label_gender::before{
-        width: calc(16 / 768 * 100vw);
-        height: calc(16 / 768 * 100vw);
-        border-radius: calc(50 / 768 * 100vw);
     }
     
     .main-container__resume{
@@ -462,31 +425,25 @@ body{
     }
     
     .main-container__agree{
-        margin: calc(21 / 768 * 100vw) 0 0 calc(0 / 768 * 100vw);
+        margin: calc(21 / 768 * 100vw) 0 0 calc(-2 / 768 * 100vw);
     }
     
-    .main-container__checkbox_agree{
-        width: calc(24 / 768 * 100vw);;
+    .main-container__agree input {
+        
+        width: calc(24 / 768 * 100vw);
         height: calc(24 / 768 * 100vw);
-    }
-    
-    .main-container__agree_text::before{
-        left: 0;
-        top: 0;
-        width: calc(20 / 768 * 100vw);
-        height: calc(20 / 768 * 100vw);
-    }
-    
-    .main-container__agree_text::after{
-        width: calc(12 / 768 * 100vw);
-        height: calc(12 / 768 * 100vw);
-        left: calc(6 / 768 * 100vw);
-        top: calc(6 / 768 * 100vw);
-    }
+        border: 2px solid #787878;
+        transition: 0.2s all linear;
+      }
+      
+    .main-container__agree input:checked {
+        box-shadow: inset 0px 0px 0px calc(4 / 768 * 100vw) #ffffff;
+      }
     
     .main-container__agree_text{
         margin-top: calc(5 / 768 * 100vw);
-        padding-left: calc(34 / 768 * 100vw);
+        padding: 0;
+        padding-left: calc(11 / 768 * 100vw);
         font-size: calc(14 / 768 * 100vw);
     }
 }
