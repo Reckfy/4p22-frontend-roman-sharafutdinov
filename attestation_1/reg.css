@@ -198,7 +198,6 @@ body{
 
 .main-container__resume{
     margin: calc(10 / 1440 * 100vw) calc(25 / 1440 * 100vw);
-    
 }
 
 .main-container__label_resume{
@@ -215,7 +214,8 @@ body{
     height: calc(246 / 1440 * 100vw);
     font-size: calc(28 / 1440 * 100vw);
     font-family: Robotobold;
-    padding: calc(7 / 1440 * 100vw) 0 0 calc(13 / 1440 * 100vw);;
+    padding: calc(7 / 1440 * 100vw) 0 0 calc(13 / 1440 * 100vw);
+    color: #787878;
 }
 
 .main-container__agree{
