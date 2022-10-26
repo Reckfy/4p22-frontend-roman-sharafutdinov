@@ -9,8 +9,10 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <form class="container">
+    <div  class="popup_open" ><a href="#container" id="popup_open">+</a></div>
+    <form class="container" id="container">
         <div class="namecalc">CALCULATOR</div>
+        <a href="#popup_open" class="container__popup_close">⨉</a>
         <div class="container-inputs">
             <input type="text" id="numberOne" class="container-inputs__operand1" placeholder="Число 1">
             <input type="text" id="operator" class="container-inputs__operator" placeholder="Знак">
