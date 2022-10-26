@@ -1,15 +1,15 @@
 'use strict';
 
-const button = document.getElementById('button');
+const button = document.getElementById('button'); 
 
-function calculate() {
-
+button.addEventListener('click', (event) => {
+event.preventDefault();
 let result;
 const numberOne = document.getElementById('numberOne').value;
 const numberTwo = document.getElementById('numberTwo').value;
 const operator = document.getElementById('operator').value;
 
-switch(operator) {
+switch(operator.trim()) {
     case '': result = 'Не введён знак';
     break;
     case '+': result = Number(numberOne) + Number(numberTwo);
@@ -24,12 +24,12 @@ switch(operator) {
     break;
 };
 
-if (numberOne === '') {
-    result = 'Первое число не указано';
+if (numberTwo.trim() === '') {
+    result = 'Второе число не указано';
 };
 
-if (numberTwo === '') {
-    result = 'Второе число не указано';
+if (numberOne.trim() === '') {
+    result = 'Первое число не указано';
 };
 
 if (isNaN(numberOne) || isNaN(numberTwo)) {
@@ -40,6 +40,10 @@ if (result === Infinity) {
     result = 'Операция не корректна';  
 };
 
-console.log(result)
-document.getElementById('result').innerHTML = result;
+if (result !== 'Программа не поддерживает такую операцию' && result !== 'Первое число не указано' && result !== 'Второе число не указано' && result !== 'Некорректный ввод чисел' && result !== 'Не введён знак' && isNaN(result)) {
+    result = 'Операция не корректна';
 };
+
+console.log(result)
+document.getElementById('result').innerText = result;
+});
