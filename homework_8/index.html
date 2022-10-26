@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Online</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="namecalc">CALCULATOR</div>
+        <div class="container-inputs">
+            <input type="text" id="numberOne" class="container-inputs__operand1" placeholder="Число 1">
+            <input type="text" id="operator" class="container-inputs__operator" placeholder="Знак">
+            <input type="text" id="numberTwo" class="container-inputs__operand2" placeholder="Число 2">
+        </div>
+        <div id="result" class="container__answer"></div>
+        <button id="button" class="container__button-calculate" onclick="calculate()">Рассчитать</button>
+    </div>
+</body>
+</html>
