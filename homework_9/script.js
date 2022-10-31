@@ -1,20 +1,19 @@
 'use strict';
 
-let lastIndex = 0
-let nextIndex = 1
-const fibonacci = document.getElementById('button');
-fibonacci.addEventListener('click', (event) => {
+function makeFibonacciFunction() {
+    let nextIndex = 1
+    let lastIndex = 0
+
+    const fibonacci = document.getElementById('button');
+    fibonacci.addEventListener('click', () => {
     
-    let sum
-    if ('button') {
-        sum = lastIndex + nextIndex
-        lastIndex = nextIndex
-        nextIndex = sum
-        console.log(sum)
-    }
-    
-    document.getElementById('fibonacciNumber').innerText = sum;
-});
+        nextIndex = nextIndex + lastIndex
+        lastIndex = nextIndex - lastIndex
+        console.log(nextIndex)
+        document.getElementById('fibonacciNumber').innerText = nextIndex;
+    })
+};
+makeFibonacciFunction()
 
 
 
